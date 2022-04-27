@@ -16,6 +16,7 @@
 
 .menu div {
     display: inline-block;
+    color: rgb(152, 151, 151);
 }
 
 .left {
@@ -72,7 +73,7 @@
 .img_in_center {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .img_in_center div {
@@ -84,7 +85,7 @@
 }
 
 #img6 {
-    width: 100%;
+    width: 95%;
 }
 
 #img4,
