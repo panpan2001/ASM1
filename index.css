@@ -1,28 +1,108 @@
-.container-fluid div {
-    display: inline-block;
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .container-fluid,
+    #mynavbar {
+        display: inline-block;
+        background-color: rgb(77, 75, 75);
+        padding: 10px;
+    }
+    #mynavbar2 {
+        display: none;
+    }
 }
 
-.left {
-    float: left;
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+}
+
+
+/* -- navbar --*/
+
+.container-fluid {
+    display: inline-block;
+    font-family: 'Times New Roman';
+    color: white;
+}
+
+#mynavbar {
+    display: inline-block;
+    background-color: rgb(77, 75, 75);
+    padding: 10px;
     margin-left: 50px;
 }
 
-.left div,
-.right div {
+#mynavbar2 {
+    display: inline-block;
+    background-color: rgb(77, 75, 75);
+    padding: 10px;
+    margin-right: 50px;
+}
+
+#left div,
+#right div {
     padding-left: 10px;
 }
 
-.right {
+#right {
     float: right;
     margin-right: 50px;
 }
 
-.hr {
+#left {
+    float: left;
+    margin-left: 50px;
+}
+
+
+/*-- container--*/
+
+.part-1,
+.part-2 {
+    font-family: 'Times New Roman';
+    margin-bottom: 50px;
+}
+
+.h2-part-1,
+.h1-part-2 {
+    font-weight: 900;
+}
+
+#line-part-1 {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
-    border-width: 10px;
+    border-width: 2px;
+}
+
+.bottom div {
+    font-family: 'Times New Roman';
+    margin-top: 50px;
+}
+
+.bottom h2 {
+    font-weight: 900;
+}
+
+.p-bottom-left a,
+.p-bottom-center a,
+.p-bottom-right a {
+    color: #00ffff;
+    text-decoration: none;
+    box-shadow: 0 1px #00ffff;
+    transition: box-shadow .4s, color .3s;
+}
+
+a:hover {
+    color: #1d269f;
+    box-shadow: 0 1px #1d269f;
 }
