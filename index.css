@@ -3,15 +3,6 @@
     [class*="col-"] {
         width: 100%;
     }
-    .container-fluid,
-    #mynavbar {
-        display: inline-block;
-        background-color: rgb(77, 75, 75);
-        padding: 10px;
-    }
-    #mynavbar2 {
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -25,9 +16,53 @@
 
 /* -- navbar --*/
 
+* {
+    font-family: 'Times New Roman';
+}
+
+#id {
+    display: flex;
+    font-family: 'Times New Roman';
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#col-left,
+#col-right {
+    background-color: rgb(77, 75, 75);
+}
+
+#left div,
+#right div {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#right {
+    float: right;
+    margin-right: 50px;
+    padding-right: 10px;
+}
+
+#left {
+    float: left;
+    margin-left: 50px;
+    padding-left: 10px;
+}
+
+
+/*
+#part-2,
+#part-1 {
+    display: inline-block;
+}
+
 .container-fluid {
     display: inline-block;
-    font-family: 'Times New Roman';
     color: white;
 }
 
@@ -60,14 +95,10 @@
     margin-left: 50px;
 }
 
+*/
+
 
 /*-- container--*/
-
-.part-1,
-.part-2 {
-    font-family: 'Times New Roman';
-    margin-bottom: 50px;
-}
 
 .h2-part-1,
 .h1-part-2 {
@@ -84,9 +115,8 @@
     border-width: 2px;
 }
 
-.bottom div {
-    font-family: 'Times New Roman';
-    margin-top: 50px;
+#img6 {
+    width: 100%;
 }
 
 .bottom h2 {
