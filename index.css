@@ -91,7 +91,7 @@ a:hover {
     .h2-part-1,
     .p-part-1 {
         position: relative;
-        top: 150px;
+        top: 200px;
         left: 50px;
         color: white;
     }
@@ -103,14 +103,14 @@ a:hover {
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
     /* For desktop:
      
       */
     .h2-part-1,
     .p-part-1 {
         position: relative;
-        top: 150px;
+        top: 250px;
         left: 50px;
         color: white;
     }
