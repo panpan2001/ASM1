@@ -1,101 +1,26 @@
-@media only screen and (max-width: 500px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-}
-
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
+* {
+    font-family: 'Times New Roman';
 }
 
 
 /* -- navbar --*/
 
-* {
-    font-family: 'Times New Roman';
-}
-
 #id {
     display: flex;
     font-family: 'Times New Roman';
-    color: white;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 0px;
     padding-bottom: 0px;
-}
-
-#col-left,
-#col-right {
-    background-color: rgb(77, 75, 75);
-}
-
-#left div,
-#right div {
-    display: inline-block;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
-#right {
-    float: right;
-    margin-right: 50px;
-    padding-right: 10px;
-}
-
-#left {
-    float: left;
+    background-color: rgb(222, 220, 217);
     margin-left: 50px;
-    padding-left: 10px;
-}
-
-
-/*
-#part-2,
-#part-1 {
-    display: inline-block;
-}
-
-.container-fluid {
-    display: inline-block;
+    margin-right: 50px;
     color: white;
 }
 
-#mynavbar {
-    display: inline-block;
-    background-color: rgb(77, 75, 75);
-    padding: 10px;
-    margin-left: 50px;
+.container-fluid {
+    margin-top: 50px;
 }
-
-#mynavbar2 {
-    display: inline-block;
-    background-color: rgb(77, 75, 75);
-    padding: 10px;
-    margin-right: 50px;
-}
-
-#left div,
-#right div {
-    padding-left: 10px;
-}
-
-#right {
-    float: right;
-    margin-right: 50px;
-}
-
-#left {
-    float: left;
-    margin-left: 50px;
-}
-
-*/
 
 
 /*-- container--*/
@@ -119,6 +44,9 @@
     width: 100%;
 }
 
+
+/*-- bottom --*/
+
 .bottom h2 {
     font-weight: 900;
 }
@@ -135,4 +63,61 @@
 a:hover {
     color: #1d269f;
     box-shadow: 0 1px #1d269f;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    #id {
+        display: inline-block;
+        font-family: 'Times New Roman';
+        background-color: white;
+    }
+    .img-part-1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets:
+     
+         */
+    .img-part-1 {
+        width: 100%;
+        height: auto;
+    }
+    .h2-part-1,
+    .p-part-1 {
+        position: relative;
+        top: 150px;
+        left: 50px;
+        color: white;
+    }
+    .h2-part-1 {
+        font-size: 32px;
+    }
+    #line-part-1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /* For desktop:
+     
+      */
+    .h2-part-1,
+    .p-part-1 {
+        position: relative;
+        top: 150px;
+        left: 50px;
+        color: white;
+    }
+    .h2-part-1 {
+        font-size: 64px;
+    }
+    #line-part-1 {
+        display: none;
+    }
 }
